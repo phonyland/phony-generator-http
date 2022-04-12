@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Phonyland\ExampleGenerator;
+namespace Phonyland\HttpGenerator;
 
 use Phonyland\Framework\Generator;
 
-class ExampleGenerator extends Generator
+class HttpGenerator extends Generator
 {
     public function text(): string
     {

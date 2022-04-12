@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-test('example->text')
-    ->expect(🙃()->example->text())
+test('http->text')
+    ->expect(🙃()->http->text())
     ->toBeAWord()
     ->toContain('example-text-');

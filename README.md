@@ -7,9 +7,9 @@
 
 <div align="center">
 
-# 🔹<br>Generator Template
+# 🔹<br>HTTP Generator
 
-This repository contains the Generator Template for 🙃 Phony Framework.
+This repository contains the HTTP Generator for 🙃 Phony Framework.
 
 </div>
 
