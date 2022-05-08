@@ -10,6 +10,7 @@ class HttpGenerator extends Generator
 {
     protected array $attributes = [
         'status_code'               => 'http.status::$.*.*.code',
+        'status_message'            => 'http.status::$.*.*.message',
     {
         return 'example-text-' . random_int(1, 9999);
     }
