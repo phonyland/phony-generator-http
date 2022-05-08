@@ -13,6 +13,11 @@ test('http->status_message')
 test('http->status')
     ->expect(🙃()->http->status)
     ->toBeArray();
+
+test('http->statusMessageFromCode()')
+    ->expect(🙃()->http->statusMessageFromCode(🙃()->http->status_code))
+    ->toBeString();
+
 test('http->statusCodeWithMessage()')
     ->expect(🙃()->http->statusCodeWithMessage())
     ->toMatch('/^\d{3}/')

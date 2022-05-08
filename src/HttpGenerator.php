@@ -20,7 +20,9 @@ class HttpGenerator extends Generator
 
         return "{$status['code']} {$status['message']}";
     }
+
+    public function statusMessageFromCode(int $statusCode): string
     {
-        return 'example-text-' . random_int(1, 9999);
+        return $this->fetch("http.status::$..[?(@.code={$statusCode})].message");
     }
 }
