@@ -9,3 +9,7 @@ test('http->status_code')
 test('http->status_message')
     ->expect(🙃()->http->status_message)
     ->toBeString();
+
+test('http->status')
+    ->expect(🙃()->http->status)
+    ->toBeArray();
