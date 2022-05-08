@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+test('http->method')
+    ->expect(🙃()->http->method)
+    ->toBeString();
+
 test('http->status_code')
     ->expect(🙃()->http->status_code)
     ->toBeNumeric();

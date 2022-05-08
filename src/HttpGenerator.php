@@ -9,6 +9,7 @@ use Phonyland\Framework\Generator;
 class HttpGenerator extends Generator
 {
     protected array $attributes = [
+        'method'                    => 'http.method*',
         'status_code'               => 'http.status::$.*.*.code',
         'status_message'            => 'http.status::$.*.*.message',
         'status'                    => 'http.status::$.*.*',
@@ -23,6 +24,6 @@ class HttpGenerator extends Generator
 
     public function statusMessageFromCode(int $statusCode): string
     {
-        return $this->fetch("http.status::$..[?(@.code={$statusCode})].message");
+        return $this->fetch("http.status::$..[?(@.code=$statusCode)].message");
     }
 }
