@@ -8,7 +8,8 @@ use Phonyland\Framework\Generator;
 
 class HttpGenerator extends Generator
 {
-    public function text(): string
+    protected array $attributes = [
+        'status_code'               => 'http.status::$.*.*.code',
     {
         return 'example-text-' . random_int(1, 9999);
     }
