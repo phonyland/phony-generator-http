@@ -13,3 +13,7 @@ test('http->status_message')
 test('http->status')
     ->expect(🙃()->http->status)
     ->toBeArray();
+test('http->statusCodeWithMessage()')
+    ->expect(🙃()->http->statusCodeWithMessage())
+    ->toMatch('/^\d{3}/')
+    ->toMatch('/[A-Za-z]+$/');
