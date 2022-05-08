@@ -6,6 +6,14 @@ namespace Phonyland\HttpGenerator;
 
 use Phonyland\Framework\Generator;
 
+/**
+ * Class HttpGenerator.
+ *
+ * @property-read string $method
+ * @property-read int    $status_code
+ * @property-read string $status_message
+ * @property-read array  $status
+ */
 class HttpGenerator extends Generator
 {
     protected array $attributes = [
