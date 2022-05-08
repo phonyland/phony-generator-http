@@ -55,7 +55,10 @@
         "phonyland": {
             "generator": {
                 "alias": "http",
-                "class": "Phonyland\\HttpGenerator\\HttpGenerator"
+                "class": "Phonyland\\HttpGenerator\\HttpGenerator",
+                "data": {
+                    "en": "phonyland-data/phony-generator-http-en"
+                }
             }
         }
     },
